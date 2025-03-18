@@ -27,4 +27,4 @@ jobs:
         env:
           BARK_KEY: ${{ secrets.BARK_KEY }}
           AIR_PUBLIC_KEY: ${{ secrets.AIR_PUBLIC_KEY }}
-        run: python your_script_name.py
+        run: python main.py
