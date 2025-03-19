@@ -2,7 +2,7 @@ name: Air Quality Notification
 
 on:
   schedule:
-    - cron: "11 * * * *"
+    - cron: "0 */2 * * *"
   workflow_dispatch:
 
 jobs:
