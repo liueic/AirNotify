@@ -10,7 +10,6 @@ air_key = os.environ['AIR_PUBLIC_KEY']
 bark_api = "https://api.day.app/" + bark_key
 air_api = "https://api.waqi.info/feed/@1451/?token=" + air_key
 
-
 def push_announce(title, message):
     headers = {
         'Content-Type': 'application/json; charset=utf-8',
@@ -22,6 +21,7 @@ def push_announce(title, message):
         "sound": "minuet",
         "icon": "https://aqicn.org/images/logo/regular.png",
         "group": "Weather",
+        "url": "https://air.juniortree.com",
     }
     try:
         requests.post(bark_api, headers=headers, data=json.dumps(body))
